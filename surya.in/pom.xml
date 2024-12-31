@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>cn.org.thinkcloud</groupId>
+        <artifactId>think-cloud-build</artifactId>
+        <version>2.0.0.RELEASE</version>
+    </parent>
+    <groupId>kmit.in</groupId>
+    <artifactId>surya.in</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <properties>
+        <rversion>2.0.0.RELEASE</rversion>
+    </properties>
+    <!--OWN Dependencies -->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>surya.in-domain</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>surya.in-repo-api</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>surya.in-biz-api</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>surya.in-manager-api</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>surya.in-commons</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+  <modules>
+    <module>surya.in-domain</module>
+    <module>surya.in-commons</module>
+    <module>surya.in-repo-api</module>
+    <module>surya.in-biz-api</module>
+    <module>surya.in-manager-api</module>
+    <module>surya.in-biz-provider</module>
+    <module>surya.in-repo-provider</module>
+    <module>surya.in-manager-provider</module>
+    <module>surya.in-ctl</module>
+  </modules>
+</project>
